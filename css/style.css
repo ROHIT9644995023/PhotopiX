@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+} */
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.container-1{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 30px; */
+}
+header{
+    /* border: 2px solid red; */
+    background-color: #ffffff;
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 0;
+    z-index: 1111;
+}
+header .logo{
+    /* border: 1px solid red; */
+    font-family: sans-serif;
+    font-size: 2.5em;
+}
+header .logo span{
+    color: #e74c3c;
+}
+header .menu{
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 20px;
+}
+header .menu a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    color: black;
+    transition: 0.5s ease;
+}
+header .menu a:first-child{
+    color: #e74c3c;
+}
+.menu a:hover{
+    color: #e74c3c;
+}
+header .icon{
+    /* border: 2px solid yellowgreen; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+header .icon i{
+    font-size: 20px;
+    transition: 0.5s ease;
+}
+header .icon i:hover{
+    color: #e74c3c;
+}
+header .icon a{
+    text-decoration: none;
+    color: white;
+    background: #e74c3c;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+
+    /* --- section --- */
+section.static{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
+                url(../images/unnamed19.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section .container{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 25px;
+}
+section .container #camera{
+    font-size: 40px;
+}
+section .container h1{
+    font-size: 2.9rem;
+    font-family: sans-serif;
+    line-height: 1.5em;
+    text-align: center;
+    letter-spacing: 1.5px;
+    word-spacing: 0.3rem;
+}
+section .container h1 span{
+    word-spacing: 0.5rem;
+    letter-spacing: 2px;
+}
+.h-text{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+section .container input{
+    width: 70%;
+    padding: 20px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    border-radius: 8px;
+}
+section .container button{
+    width: 30%;
+    padding: 18px;
+    color: white;
+    border: none;
+    outline: none;
+    background: #e74c3c;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+            /* ------ section ------- */
+.container-3{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+}            
+.gallery-filter{
+    /* border: 2px solid red; */
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} 
+.portfolio-menu ul{
+    /* border: 1px solid red;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+}   
+.portfolio-menu ul li{
+    list-style: none;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.portfolio-menu ul li:hover{
+    color: white;
+    background: #e74c3c;
+    border-radius: 8px;
+}
+.portfolio-menu ul li.active{
+    color: white;
+    background: #e74c3c;
+    border-radius: 8px;
+}
+.greed{ 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.greed img{
+    border-radius: 10px;
+    width: 100%;
+    height: 332px;
+    padding: 5px 5px;
+}
+.container-4{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.member{
+    /* border: 2px solid red; */
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 0 15px;
+    line-height: 40px;
+}
+.member h1{
+    font-size: 2.5em;
+}
+.member h1 span{
+    color: #e74c3c;
+}
+.member p{
+    text-align: center;
+}
+.member-card{
+    /* border: 2px solid red; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+.member-card .light{
+    border-radius: 100%;
+}
+.member-card p{
+    line-height: 2em;
+}
+.image{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.image .light-1{
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+}
+.m-image{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+.m-image >img{
+    width: 167px;
+    height: 165px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.m-image >img:hover{
+    transform: scale(1.5);
+}
+
+            /* ------- footer ------ */
+footer{
+    background: #262626;
+    padding: 50px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+}
+.container-5{
+    width: 80%;
+    /* border: 2px solid red; */
+}
+.newsletter{
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.newsletter h2{
+    font-size: 2em;
+    font-family: sans-serif;
+}
+.newsletter p{
+    font-size: 20px;
+    line-height: 20px;
+}
+.ntext label{
+    display: flex;
+    /* border: 2px solid yellow; */
+}
+.ntext input{
+    padding: 20px;
+    width: 70%;
+    border-radius: 8px 0 0 8px;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+.ntext button{
+    padding: 20px 0;
+    width: 30%;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 0 8px 8px 0;
+}
+
+                /* ------ footer -------- */
+footer .f-contant{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    color: white;
+}
+.f-contant >div{
+    /* border: 1px solid red; */
+    text-align: center;
+    padding: 20px 10px 10px 10px;
+}
+.f-contant p{
+    line-height: 2em;
+    font-size: 20px;
+    color: gray;
+    cursor: pointer;
+}
+.f-contant p:hover{
+    color: white;
+}
+.f-contant .logo{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 8px;
+}
+.f-contant i{
+    background: white;
+    padding: 8px;
+    font-size: 16px;
+    color: black;
+    border-radius: 100%;
+    border: 1px solid black;
+    transition: 0.4s ease;
+}
+.f-contant i:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+
